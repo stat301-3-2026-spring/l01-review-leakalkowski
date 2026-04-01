@@ -40,7 +40,9 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+- 
+- 
+- 
 
 :::
 
