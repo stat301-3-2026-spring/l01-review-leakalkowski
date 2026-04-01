@@ -40,9 +40,14 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 ::: {.callout-tip icon="false"}
 ## Solution
 
-- 
-- 
-- 
+- decide regression or classification
+- split data and set resampling
+- select a model and set specifications
+- set up workflow
+- set up hyperparameter tuning values (if needed) and build grid
+- train the model
+- final fit with best hyperparameter
+- explore predictions and accuracy
 
 :::
 
@@ -53,7 +58,10 @@ Explain the difference between supervised and unsupervised learning.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+In unsupervised learning, we don't have a target of interest. We don't have an outcome that supervises the process. It is a data-driven model. Objective is pattern/structure recognition.
+
+In supervised learning, there is a target of interest/outcome variable so it is a task driven model. Objective is predictions and predicitve models.
+
 
 :::
 
@@ -66,7 +74,7 @@ In general, we can classify a model by its purpose into 1 of the 3 categories be
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Describe characteristics and relationships of some data
 
 :::
 
@@ -75,7 +83,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Produces a decision for a research question. Whether a predictive in modeling an outcome variable.
 
 :::
 
@@ -84,7 +92,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Produces a possible prediction for new data that comes in.
 
 :::
 
@@ -99,7 +107,7 @@ What does it mean to be a mechanistic model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+It assumes that the outcome follows some sort of known form or equation.
 
 :::
 
@@ -110,7 +118,7 @@ What does it mean to be an empirically driven model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+There are no assumptions about the form of the equation.
 
 :::
 
@@ -121,7 +129,7 @@ How does the mechanistic and empirically driven model terminology relate to the 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Mechanistic signals that there is some sort of mechanism (aka equation) that is helping us. Parametric means something defined by parameters. So the mechanisms used are parameters. Empirically means by observations or experience, which relates to nonparametric because that means no parameters. There are no parameters given, so the model has to learn from experience.
 
 :::
 
@@ -132,7 +140,7 @@ In general, is a mechanistic or empirically driven model easier to interpret? Ex
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+A mechanistic model is easier to interpret because they already assume a fixed, predetermined form. 
 
 :::
 
