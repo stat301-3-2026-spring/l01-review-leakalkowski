@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Lea Kalkowski">
-<meta name="dcterms.date" content="2026-03-31">
+<meta name="dcterms.date" content="2026-04-05">
 
 <title>L01 Lea Kalkowski</title>
 <style>
@@ -2174,8 +2174,7 @@ vertical-align: -.125em;
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a>
+  <li><a href="#questions" id="toc-questions" class="nav-link active" data-scroll-target="#questions">Questions</a>
   <ul>
   <li><a href="#question-1" id="toc-question-1" class="nav-link" data-scroll-target="#question-1">Question 1</a></li>
   <li><a href="#question-2" id="toc-question-2" class="nav-link" data-scroll-target="#question-2">Question 2</a></li>
@@ -2229,7 +2228,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 31, 2026</p>
+      <p class="date">April 5, 2026</p>
     </div>
   </div>
   
@@ -2254,10 +2253,6 @@ vertical-align: -.125em;
 <p><a href="https://github.com/stat301-3-2026-spring/l01-review-leakalkowski">My github link</a></p>
 </div>
 </div>
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>The goal of this lab is to review machine learning/predictive modeling vocabulary and concepts covered in Data Science 2 with R (STAT 301-2).</p>
-</section>
 <section id="questions" class="level2">
 <h2 class="anchored" data-anchor-id="questions">Questions</h2>
 <p>When completing the following questions ensure your solutions are neatly formatted and clearly indicated. Consider including diagrams/images in some of your solutions, if it helps to make things easier to describe/discuss.</p>
@@ -2274,7 +2269,16 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<ul>
+<li>decide regression or classification</li>
+<li>split data and set resampling</li>
+<li>select a model and set specifications</li>
+<li>set up workflow</li>
+<li>set up hyperparameter tuning values (if needed) and build grid</li>
+<li>train the model</li>
+<li>final fit with best hyperparameter</li>
+<li>explore predictions and accuracy</li>
+</ul>
 </div>
 </div>
 </section>
@@ -2291,7 +2295,8 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>In unsupervised learning, we don’t have a target of interest. We don’t have an outcome that supervises the process. It is a data-driven model. Objective is pattern/structure recognition.</p>
+<p>In supervised learning, there is a target of interest/outcome variable so it is a task driven model. Objective is predictions and predicitve models.</p>
 </div>
 </div>
 </section>
@@ -2310,7 +2315,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Describe characteristics and relationships of some data</p>
 </div>
 </div>
 </section>
@@ -2326,7 +2331,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Produces a decision for a research question. Whether a predictive in modeling an outcome variable.</p>
 </div>
 </div>
 </section>
@@ -2342,7 +2347,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Produces a possible prediction for new data that comes in.</p>
 </div>
 </div>
 </section>
@@ -2363,7 +2368,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>It assumes that the outcome follows some sort of known form or equation.</p>
 </div>
 </div>
 </section>
@@ -2380,7 +2385,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>There are no assumptions about the form of the equation.</p>
 </div>
 </div>
 </section>
@@ -2397,7 +2402,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Mechanistic signals that there is some sort of mechanism (aka equation) that is helping us. Parametric means something defined by parameters. So the mechanisms used are parameters. Empirically means by observations or experience, which relates to nonparametric because that means no parameters. There are no parameters given, so the model has to learn from experience.</p>
 </div>
 </div>
 </section>
@@ -2414,7 +2419,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>A mechanistic model is easier to interpret because they already assume a fixed, predetermined form.</p>
 </div>
 </div>
 </section>
@@ -2431,7 +2436,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>An empirically driven model is more flexible because it lets the data speak for itself with a lot fewer assumptions about the data that it receives. Mechanistic models follow the mechanics of some theory or known relationships, so there is less room for flexibility.</p>
 </div>
 </div>
 </section>
@@ -2448,7 +2453,9 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Bias is the error of being too simple, more along the lines of underfitting. Variance is the error from being too sensitive, so like overfitting. There is a bias variance trade off when you make your model more or less complex. As the flexibility of your model increases, bias decreases but variance increases.</p>
+<p>When using a mechanistic model, bias is typically higher and the variance is lower. If the true relationship doesn’t necessarily match your assumptions, then your model will miss patterns. But, small changes in the data won’t completely change the model.</p>
+<p>For empirically driven models, bias is lower meaning that it can approximate the true function fairly well, but variance is high and more susceptible to noise.</p>
 </div>
 </div>
 </section>
@@ -2466,7 +2473,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Both are trying to predict a variable, but the type of the outcome variable dictates what type of machine learning problem it is. Regression problems predict numerical values (price, temperature, etc) while classification predicts categorical variables (e.g. yes/no determination).</p>
 </div>
 </div>
 </section>
@@ -2483,7 +2490,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Splitting by the outcome/target variable ensures that there is a relatively even distribution of that variable within each set. If you didn’t have an even distribution, then your model would be trained on different distributions which can be a problem for predictions.</p>
 </div>
 </div>
 </section>
@@ -2500,7 +2507,8 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>The training data is split into v number of roughly even folds. Common v numbers are 3, 5, and 10. Then for each fold, the model is trained with the other v-1 folds, predicts the left-out fold, then computes the RMSE. This process is repeated for all folds, then the RMSE is averaged. That process repeats for how ever many repeats you tell your model to use, with the average of all RMSE’s across all the folds and repeats being calculated.</p>
+<p>It’s helpful when there are not that many observations. There are more models created, which means more accurate averages and variance is reduces.</p>
 </div>
 </div>
 </section>
@@ -2517,7 +2525,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Bootstrap is preferred when the dataset is very small. For v-folds, splitting the dataset into mutually exclusive folds can make the training sets small. With bootstrap, replacing lets you use observations multiple time. Additionally, bootstrap gives you a distribution of RMSE if you want a measure of uncertainty.</p>
 </div>
 </div>
 </section>
@@ -2534,7 +2542,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Tuning is when you adjust the hyperparameters of your model. Instead of setting hyperparameters on your own and guessing, like the number of neighbors for KNN, you adjust and test a range of them and are told the best ones. This is finding the “sweet spot” of all your model’s different hyperparameters and combiantions of them.</p>
 </div>
 </div>
 </section>
@@ -2551,7 +2559,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>RMSE and RSQ</p>
 </div>
 </div>
 <p>What are two common performance metrics when dealing with a classification ML problem?</p>
@@ -2565,7 +2573,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Accuracy and ROC AUC.</p>
 </div>
 </div>
 </section>
@@ -2586,7 +2594,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Inferential because it is asking about the effect of one thing on another. The goal is to understand the connection, not just make a prediction.</p>
 </div>
 </div>
 <ol start="2" type="1">
@@ -2602,7 +2610,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Prediction because you are trying to forecast (or estimate and outcome) something in the future.</p>
 </div>
 </div>
 </section>

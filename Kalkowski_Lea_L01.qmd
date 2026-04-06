@@ -151,7 +151,7 @@ How does mechanistic and empirically driven model terminology relate to the idea
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+An empirically driven model is more flexible because it lets the data speak for itself with a lot fewer assumptions about the data that it receives. Mechanistic models follow the mechanics of some theory or known relationships, so there is less room for flexibility. 
 
 :::
 
@@ -162,7 +162,11 @@ Describe the bias-variance trade-off when considering the use of a mechanistic o
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Bias is the error of being too simple, more along the lines of underfitting. Variance is the error from being too sensitive, so like overfitting. There is a bias variance trade off when you make your model more or less complex. As the flexibility of your model increases, bias decreases but variance increases. 
+
+When using a mechanistic model, bias is typically higher and the variance is lower. If the true relationship doesn't necessarily match your assumptions, then your model will miss patterns. But, small changes in the data won't completely change the model.
+
+For empirically driven models, bias is lower meaning that it can approximate the true function fairly well, but variance is high and more susceptible to noise.
 
 :::
 
@@ -173,7 +177,7 @@ Explain the difference between a regression and classification machine learning 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Both are trying to predict a variable, but the type of the outcome variable dictates what type of machine learning problem it is. Regression problems predict numerical values (price, temperature, etc) while classification predicts categorical variables (e.g. yes/no determination).
 
 :::
 
@@ -184,7 +188,7 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Splitting by the outcome/target variable ensures that there is a relatively even distribution of that variable within each set. If you didn't have an even distribution, then your model would be trained on different distributions which can be a problem for predictions. 
 
 :::
 
@@ -195,7 +199,9 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+The training data is split into v number of roughly even folds. Common v numbers are 3, 5, and 10. Then for each fold, the model is trained with the other v-1 folds, predicts the left-out fold, then computes the RMSE. This process is repeated for all folds, then the RMSE is averaged. That process repeats for how ever many repeats you tell your model to use, with the average of all RMSE's across all the folds and repeats being calculated. 
+
+It's helpful when there are not that many observations. There are more models created, which means more accurate averages and variance is reduces. 
 
 :::
 
@@ -206,7 +212,7 @@ When might we use a bootstrap resampling procedure instead of v-fold cross valid
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Bootstrap is preferred when the dataset is very small. For v-folds, splitting the dataset into mutually exclusive folds can make the training sets small. With bootstrap, replacing lets you  use observations multiple time. Additionally, bootstrap gives you a distribution of RMSE if you want a measure of uncertainty. 
 
 :::
 
@@ -217,7 +223,7 @@ Briefly describe model tuning and why we use it.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Tuning is when you adjust the hyperparameters of your model. Instead of setting hyperparameters on your own and guessing, like the number of neighbors for KNN, you adjust and test a range of them and are told the best ones. This is finding the "sweet spot" of all your model's different hyperparameters and combiantions of them. 
 
 :::
 
@@ -228,7 +234,7 @@ What are two common performance metrics when dealing with a regression ML proble
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+RMSE and RSQ
 
 :::
 
@@ -237,7 +243,7 @@ What are two common performance metrics when dealing with a classification ML pr
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Accuracy and ROC AUC. 
 
 :::
 
@@ -252,7 +258,7 @@ A company with a subscription based service (for example Netflix, Disney+, New Y
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Inferential because it is asking about the effect of one thing on another. The goal is to understand the connection, not just make a prediction.
 
 :::
 
@@ -261,7 +267,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Prediction because you are trying to forecast (or estimate and outcome) something in the future.
 
 :::
 
