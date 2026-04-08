@@ -1,0 +1,275 @@
+---
+title: "Self Evaluation L01 Review"
+subtitle: |
+  | Data Science 2 with R 
+  | STAT 301-2
+author: "Lea Kalkowski"
+pagetitle: "Self Evaluation L01 Review Lea Kalkowski "
+date: today
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 4
+    toc-location: left
+    embed-resources: true
+    code-fold: false
+    link-external-newwindow: true
+
+execute:
+  warning: false
+  error: true
+
+from: markdown+emoji
+reference-location: margin
+citation-location: margin 
+---
+::: {.callout-tip icon="false"}
+## Github Repo Link
+
+[My github link](https://github.com/stat301-3-2026-spring/l01-review-leakalkowski)
+:::
+
+## Questions
+
+When completing the following questions ensure your solutions are neatly formatted and clearly indicated. Consider including diagrams/images in some of your solutions, if it helps to make things easier to describe/discuss.
+
+### Question 1
+
+Provide a brief outline/overview of the steps involved in a supervised machine learning process. Could provide this as a bulleted list. 
+
+::: {.callout-tip icon="false"}
+## Solution
+
+- decide regression or classification
+- split data and set resampling
+- select a model and set specifications
+- set up workflow
+- set up hyperparameter tuning values (if needed) and build grid
+- train the model
+- final fit with best hyperparameter
+- explore predictions and accuracy
+
+:::
+
+### Question 2
+
+Explain the difference between supervised and unsupervised learning.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+In unsupervised learning, we don't have a target of interest. We don't have an outcome that supervises the process. It is a data-driven model. Objective is pattern/structure recognition.
+
+In supervised learning, there is a target of interest/outcome variable so it is a task driven model. Objective is predictions and predicitve models.
+
+
+:::
+
+### Question 3 
+
+In general, we can classify a model by its purpose into 1 of the 3 categories below. Provide a brief description of the goals of these model classes.
+
+#### Descriptive Models 
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Describe characteristics and relationships of some data
+
+:::
+
+#### Inferential Models
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Produces a decision for a research question. Whether a predictive in modeling an outcome variable.
+
+:::
+
+#### Predictive Models
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Produces a possible prediction for new data that comes in.
+
+:::
+
+### Question 4 
+
+We can further describe/classify predictive models by how they were derived or developed as being either mechanistic or empirically driven. 
+
+#### Part (a)
+
+What does it mean to be a mechanistic model?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+It assumes that the outcome follows some sort of known form or equation.
+
+:::
+
+#### Part (b)
+
+What does it mean to be an empirically driven model?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+There are no assumptions about the form of the equation.
+
+:::
+
+#### Part (c)
+
+How does the mechanistic and empirically driven model terminology relate to the parametric and nonparametric model terminology? 
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Mechanistic signals that there is some sort of mechanism (aka equation) that is helping us. Parametric means something defined by parameters. So the mechanisms used are parameters. Empirically means by observations or experience, which relates to nonparametric because that means no parameters. There are no parameters given, so the model has to learn from experience.
+
+:::
+
+#### Part (d)
+
+In general, is a mechanistic or empirically driven model easier to interpret? Explain.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+A mechanistic model is easier to interpret because they already assume a fixed, predetermined form. 
+
+:::
+
+#### Part (e)
+
+How does mechanistic and empirically driven model terminology relate to the idea of model flexibility? That is, which would be more or less flexible than the other.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+An empirically driven model is more flexible because it lets the data speak for itself with a lot fewer assumptions about the data that it receives. Mechanistic models follow the mechanics of some theory or known relationships, so there is less room for flexibility. 
+
+:::
+
+#### Part (f)
+
+Describe the bias-variance trade-off when considering the use of a mechanistic or empirically driven model. 
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Bias is the error of being too simple, more along the lines of underfitting. Variance is the error from being too sensitive, so like overfitting. There is a bias variance trade off when you make your model more or less complex. As the flexibility of your model increases, bias decreases but variance increases. 
+
+When using a mechanistic model, bias is typically higher and the variance is lower. If the true relationship doesn't necessarily match your assumptions, then your model will miss patterns. But, small changes in the data won't completely change the model.
+
+For empirically driven models, bias is lower meaning that it can approximate the true function fairly well, but variance is high and more susceptible to noise.
+
+:::
+
+### Question 5 
+
+Explain the difference between a regression and classification machine learning (ML) problems.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Both are trying to predict a variable, but the type of the outcome variable dictates what type of machine learning problem it is. Regression problems predict numerical values (price, temperature, etc) while classification predicts categorical variables (e.g. yes/no determination).
+
+:::
+
+### Question 6 
+
+When splitting the data, why is it useful to stratify by the outcome/target variable? 
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Splitting by the outcome/target variable ensures that there is a relatively even distribution of that variable within each set. If you didn't have an even distribution, then your model would be trained on different distributions which can be a problem for predictions. 
+
+:::
+
+### Question 7 
+
+Briefly describe how v-fold cross validation with repeats is used to estimate test RMSE. Also provide an explanation of why we use it. 
+
+::: {.callout-tip icon="false"}
+## Solution
+
+The training data is split into v number of roughly even folds. Common v numbers are 3, 5, and 10. Then for each fold, the model is trained with the other v-1 folds, predicts the left-out fold, then computes the RMSE. This process is repeated for all folds, then the RMSE is averaged. That process repeats for how ever many repeats you tell your model to use, with the average of all RMSE's across all the folds and repeats being calculated. 
+
+It's helpful when there are not that many observations. There are more models created, which means more accurate averages and variance is reduces. 
+
+:::
+
+### Question 8
+
+When might we use a bootstrap resampling procedure instead of v-fold cross validation to estimate test RMSE?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Bootstrap is preferred when the dataset is very small. For v-folds, splitting the dataset into mutually exclusive folds can make the training sets small. With bootstrap, replacing lets you  use observations multiple time. Additionally, bootstrap gives you a distribution of RMSE if you want a measure of uncertainty. 
+
+:::
+
+### Question 9 
+
+Briefly describe model tuning and why we use it.
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Tuning is when you adjust the hyperparameters of your model. Instead of setting hyperparameters on your own and guessing, like the number of neighbors for KNN, you adjust and test a range of them and are told the best ones. This is finding the "sweet spot" of all your model's different hyperparameters and combiantions of them. 
+
+:::
+
+### Question 10 
+
+What are two common performance metrics when dealing with a regression ML problem?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+RMSE and RSQ
+
+:::
+
+What are two common performance metrics when dealing with a classification ML problem?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Accuracy and ROC AUC. 
+
+:::
+
+### Question 11
+
+Classify each question/problem below as either prediction or inferential. Explain your reasoning for each.
+
+A company with a subscription based service (for example Netflix, Disney+, New York Times, etc) has data concerning customer interactions with a them, including features like the number of customer service calls, quality of service calls, subscription length, engagement with the service, discounted service, etc. They are interested in two questions:
+
+1. Does a high number of service calls impact a customer's likelihood of churn in the next month (leave the company/drop the service)?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Inferential because it is asking about the effect of one thing on another. The goal is to understand the connection, not just make a prediction.
+
+:::
+
+2. How likely is it that a customer will churn in the next month (leave the company/drop the service)?
+
+::: {.callout-tip icon="false"}
+## Solution
+
+Prediction because you are trying to forecast (or estimate and outcome) something in the future.
+
+:::
+
