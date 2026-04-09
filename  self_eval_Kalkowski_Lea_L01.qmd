@@ -53,6 +53,25 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 
 :::
 
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+
+
+## Explanation
+
+Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
+
+## Updated solution
+
+*Only required if a 3 or less is scored on the question.*
+
+
+:::
+
+
 ### Question 2
 
 Explain the difference between supervised and unsupervised learning.
