@@ -58,16 +58,11 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 ::: {.callout-important icon="false"}
 
 ## Score 
-
+4
 
 ## Explanation
 
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
-
-## Updated solution
-
-*Only required if a 3 or less is scored on the question.*
-
+Overall idea was there, just missed some key words in the description. Clear understanding of concept was shown.
 
 :::
 
@@ -86,6 +81,20 @@ In supervised learning, there is a target of interest/outcome variable so it is 
 
 :::
 
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Clear understanding of what supervised and unsupervised learning is. Explanations included information about target of interest. 
+
+
+:::
+
 ### Question 3 
 
 In general, we can classify a model by its purpose into 1 of the 3 categories below. Provide a brief description of the goals of these model classes.
@@ -98,6 +107,7 @@ In general, we can classify a model by its purpose into 1 of the 3 categories be
 Describe characteristics and relationships of some data
 
 :::
+
 
 #### Inferential Models
 
@@ -117,6 +127,19 @@ Produces a possible prediction for new data that comes in.
 
 :::
 
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+4
+
+## Explanation
+
+Understanding of the difference between each model was clear. Needed slight help with inferential model.
+
+:::
+
 ### Question 4 
 
 We can further describe/classify predictive models by how they were derived or developed as being either mechanistic or empirically driven. 
@@ -132,6 +155,20 @@ It assumes that the outcome follows some sort of known form or equation.
 
 :::
 
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+4
+
+## Explanation
+
+Explanation was correct but short. 
+
+
+:::
+
 #### Part (b)
 
 What does it mean to be an empirically driven model?
@@ -140,6 +177,19 @@ What does it mean to be an empirically driven model?
 ## Solution
 
 There are no assumptions about the form of the equation.
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+4
+
+## Explanation
+
+Like the previous question, explanation was completely correct but shorter than the provided answer.
 
 :::
 
@@ -154,6 +204,19 @@ Mechanistic signals that there is some sort of mechanism (aka equation) that is 
 
 :::
 
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Explanation went further than needed and correctly identified how the terms relate. Explanation touched further on the answers above. 
+
+:::
+
 #### Part (d)
 
 In general, is a mechanistic or empirically driven model easier to interpret? Explain.
@@ -165,6 +228,23 @@ A mechanistic model is easier to interpret because they already assume a fixed, 
 
 :::
 
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+3
+
+## Explanation
+
+Correctly identified which one is easier to interpret and explained it, but didn't touch on the empirically driven model. I believe this error occurred because I did not read the question clearly enough.
+
+## Updated solution
+
+A mechanistic model is easier to interpret because they already assume a fixed, predetermined form. In contrast, empirically driven models do not follow any defined mathematical form and it makes it extremely difficult (even impossible) to interpret them.
+
+:::
+
 #### Part (e)
 
 How does mechanistic and empirically driven model terminology relate to the idea of model flexibility? That is, which would be more or less flexible than the other.
@@ -173,6 +253,19 @@ How does mechanistic and empirically driven model terminology relate to the idea
 ## Solution
 
 An empirically driven model is more flexible because it lets the data speak for itself with a lot fewer assumptions about the data that it receives. Mechanistic models follow the mechanics of some theory or known relationships, so there is less room for flexibility. 
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Perfect explanation that went even further than the solutions answer.
 
 :::
 
@@ -191,6 +284,20 @@ For empirically driven models, bias is lower meaning that it can approximate the
 
 :::
 
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+4
+
+## Explanation
+
+Some minor things missing, but overall idea is correct and explanation goes into detail.
+
+:::
+
 ### Question 5 
 
 Explain the difference between a regression and classification machine learning (ML) problems.
@@ -202,6 +309,21 @@ Both are trying to predict a variable, but the type of the outcome variable dict
 
 :::
 
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Explanation provided was correct and went beyond solutions answer
+
+
+:::
+
 ### Question 6 
 
 When splitting the data, why is it useful to stratify by the outcome/target variable? 
@@ -210,6 +332,19 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 ## Solution
 
 Splitting by the outcome/target variable ensures that there is a relatively even distribution of that variable within each set. If you didn't have an even distribution, then your model would be trained on different distributions which can be a problem for predictions. 
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Correct explanation and use of the key term distribution
 
 :::
 
@@ -226,6 +361,19 @@ It's helpful when there are not that many observations. There are more models cr
 
 :::
 
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+4
+
+## Explanation
+Explanation was correct but missing the minor detail of "reduce the effects of random variation and bias in the data"
+
+
+:::
+
 ### Question 8
 
 When might we use a bootstrap resampling procedure instead of v-fold cross validation to estimate test RMSE?
@@ -237,6 +385,19 @@ Bootstrap is preferred when the dataset is very small. For v-folds, splitting th
 
 :::
 
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+4
+
+## Explanation
+
+Explanation was correct but missing the key term "low variance" to describe RMSE.
+
+:::
+
 ### Question 9 
 
 Briefly describe model tuning and why we use it.
@@ -244,7 +405,21 @@ Briefly describe model tuning and why we use it.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-Tuning is when you adjust the hyperparameters of your model. Instead of setting hyperparameters on your own and guessing, like the number of neighbors for KNN, you adjust and test a range of them and are told the best ones. This is finding the "sweet spot" of all your model's different hyperparameters and combiantions of them. 
+Tuning is when you adjust the hyperparameters of your model. Instead of setting hyperparameters on your own and guessing, like the number of neighbors for KNN, you adjust and test a range of them and are told the best ones. This is finding the "sweet spot" of all your model's different hyperparameters and combinations of them. 
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Clear understanding of wht hyperparameters are and why we use them.
+
 
 :::
 
@@ -259,12 +434,26 @@ RMSE and RSQ
 
 :::
 
+
 What are two common performance metrics when dealing with a classification ML problem?
 
 ::: {.callout-tip icon="false"}
 ## Solution
 
 Accuracy and ROC AUC. 
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Correctly identified performance metrics
 
 :::
 
@@ -289,6 +478,19 @@ Inferential because it is asking about the effect of one thing on another. The g
 ## Solution
 
 Prediction because you are trying to forecast (or estimate and outcome) something in the future.
+
+:::
+
+### Self Evaluation
+
+::: {.callout-important icon="false"}
+
+## Score 
+5
+
+## Explanation
+
+Correctly identified either inferential or predictive. 
 
 :::
 
